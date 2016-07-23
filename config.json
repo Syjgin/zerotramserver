@@ -1,0 +1,322 @@
+{
+	"version" : "0.1",
+	"hero": {
+			"InitialLifes": 800,
+			"AttackDistance": 1,
+			"AttackReloadPeriod": 0.5,
+			"Velocity": 6,
+			"AttackReactionPeriod" : 0.5,
+			"AttackReloadPeriod" : 0.5,
+			"MovingToDragTargetVelocity" : 20
+		},
+	"alien": {
+            "AttackProbabilities" : {
+              "conductor" : 70,
+              "alien" : 90,
+              "default" : 10
+            },
+            "RunAwayProbabilities" : {
+              "conductor" : 20,
+              "gnome" : 30,
+              "alien" : 0,
+              "default" : 50
+            },
+            "ChangeStatePeriod" : 5,
+			"DragChangeStatePeriod" : 5,
+            "AttackDistance" : 3,
+            "AttackReloadPeriod" : 6,
+            "AttackMaxDistance" : 10,
+            "CounterAttackProbability" : 0,
+            "InitialLifes" : 80,
+            "Velocity" : 4,
+            "AttackStrength" : -20,
+            "AttackReactionPeriod" : 0.5,
+            "TicketProbability" : 30,
+            "StickProbability" : 25,
+			"BonusProbability" : 45,
+			"BonusMap" : {
+				"AntiHare" : 45,
+				"SandGlass" : 45,
+				"Heal" : 10
+			}
+		},
+	"bird": {
+            "AttackProbabilities" : {
+              "conductor" : 80,
+              "bird" : 20,
+              "granny" : 95,
+              "default" : 70
+            },
+            "RunAwayProbabilities" : {
+              "conductor" : 10,
+              "bird" : 30,
+              "default" : 50
+            },
+            "ChangeStatePeriod" : 1,
+			"DragChangeStatePeriod" : 0.5,
+            "AttackDistance" : 1.5,
+            "AttackReloadPeriod" : 1,
+            "AttackMaxDistance" : 50,
+            "CounterAttackProbability" : 70,
+            "InitialLifes" : 100,
+            "Velocity" : 8,
+            "AttackStrength" : 8,
+            "AttackReactionPeriod" : 0.5,
+            "TicketProbability" : 40,
+            "StickProbability" : 5,
+			"BonusProbability" : 20,
+			"BonusMap" : {
+				"Boot" : 45,
+				"Magnet" : 45,
+				"Heal" : 10
+			}
+		},
+	"cat": {
+            "AttackProbabilities" : {
+              "bird" : 70,
+              "gnome" : 20,
+              "default" : 50
+            },
+            "RunAwayProbabilities" : {
+              "conductor" : 95,
+              "alien" : 0,
+              "default" : 50
+            },
+            "ChangeStatePeriod" : 3,
+			"DragChangeStatePeriod" : 1,
+            "AttackDistance" : 1,
+            "AttackReloadPeriod" : 2,
+            "AttackMaxDistance" : 5,
+            "CounterAttackProbability" : 50,
+            "InitialLifes" : 150,
+            "Velocity" : 10,
+            "AttackStrength" : 20,
+            "AttackReactionPeriod" : 0.5,
+            "TicketProbability" : 20,
+            "StickProbability" : 5,
+			"BonusProbability" : 25,
+			"BonusMap" : {
+				"Wheel" : 45,
+				"Ticket" : 45,
+				"Heal" : 10
+			}
+		},
+	"gnome": {
+            "AttackProbabilities" : {
+              "bird" : 40,
+              "cat" : 50,
+              "gnome" : 0,
+              "default" : 5
+            },
+            "RunAwayProbabilities" : {
+              "conductor" : 10,
+              "granny" : 30,
+              "default" : 5
+            },
+            "ChangeStatePeriod" : 10,
+			"DragChangeStatePeriod" : 2,
+            "AttackDistance" : 1,
+            "AttackReloadPeriod" : 5,
+            "AttackMaxDistance" : 3,
+            "CounterAttackProbability" : 95,
+            "InitialLifes" : 450,
+            "Velocity" : 1,
+            "AttackStrength" : 40,
+            "AttackReactionPeriod" : 0.5,
+            "TicketProbability" : 60,
+            "StickProbability" : 80,
+			"BonusProbability" : 80,
+			"BonusMap" : {
+				"Smile" : 30,
+				"Wrench" : 30,
+				"Heal" : 40
+			}
+		},
+	"granny": {
+            "AttackProbabilities" : {
+              "conductor" : 15,
+              "bird" : 30,
+              "granny" : 50,
+              "default" : 85
+            },
+            "RunAwayProbabilities" : {
+              "conductor" : 10,
+              "alien" : 0,
+              "default" : 50
+            },
+            "ChangeStatePeriod" : 7,
+			"DragChangeStatePeriod" : 2,
+            "AttackDistance" : 1,
+            "AttackReloadPeriod" : 3,
+            "AttackMaxDistance" : 10,
+            "CounterAttackProbability" : 95,
+            "InitialLifes" : 250,
+            "Velocity" : 0.3,
+            "AttackStrength" : 30,
+            "AttackReactionPeriod" : 0.5,
+            "TicketProbability" : 80,
+            "StickProbability" : 60,
+			"BonusProbability" : 30,
+			"BonusMap" : {
+				"Heal" : 45,
+				"Clew" : 45
+			}
+		},
+	"bonuses" : {
+		"DestroyPeriod" : 10,
+		"wheelBonus" : {
+			"TTL" : 30,
+			"incrementCoef" : 1.25
+		},
+		"wheelMegaBonus" : {
+			"TTL" : 60,
+			"incrementCoef" : 2
+		},
+		"ticketBonus" : {
+			"TTL" : 30,
+			"dist" : 3
+		},
+		"ticketMegaBonus" : {
+			"TTL" : 60,
+			"dist" : 4
+		},
+		"bootBonus" : {
+			"TTL" : 30,
+			"incrementCoef" : 1.5
+		},
+		"bootMegaBonus" : {
+			"TTL" : 60,
+			"incrementCoef" : 2
+		},
+		"magnetBonus" : {
+			"TTL" : 30,
+			"dist" : 3
+		},
+		"magnetMegaBonus" : {
+			"TTL" : 60,
+			"dist" : 4.5
+		},
+		"smileBonus" : {
+			"TTL" : 30,
+			"incrementCoef" : 1.5
+		},
+		"smileMegaBonus" : {
+			"TTL" : 60,
+			"incrementCoef" : 2
+		},
+		"antiHareBonus" : {
+			"TTL" : 30,
+			"incrementCoef" : 1.5
+		},
+		"antiHareMegaBonus" : {
+			"TTL" : 60,
+			"incrementCoef" : 2
+		},
+		"sandglassBonus" : {
+			"TTL" : 30,
+			"incrementCoef" : 1.5
+		},
+		"sandglassMegaBonus" : {
+			"TTL" : 30,
+			"incrementCoef" : 2
+		},
+		"vortexBonus" : {
+			"TTL" : 0,
+			"dist" : 10
+		},
+		"snowBonus" : {
+			"TTL" : 30,
+			"dist" : 3
+		},
+		"wrenchBonus" : {
+			"TTL" : 30
+		},
+		"healBonus" : {
+			"incrementCoef" : 0.25
+		},
+		"healMegaBonus" : {
+			"dist" : 2
+		},
+		"clewMegaBonus" : {
+			"dist" : 3
+		}
+	},
+	"levels" : {
+		"level1" : {
+			"passengersMap" : {
+							"alien" : 20,
+							"bird" : 30,
+							"cat" : 30,
+							"gnome" : 10,
+							"granny" : 10
+						},
+			"name" : "Станция 1",
+			"count" : 20,
+			"doorsOpenMode" : "tween"
+		}, 
+		"level2" : {
+			"passengersMap" : {
+							"alien" : 10,
+							"bird" : 40,
+							"cat" : 40,
+							"gnome" : 5,
+							"granny" : 5
+						},
+			"name" : "Станция 2",
+			"count" : 15,
+			"doorsOpenMode" : "single"
+		},
+		"level3" : {
+			"passengersMap" : {
+							"alien" : 10,
+							"bird" : 40,
+							"cat" : 40,
+							"gnome" : 5,
+							"granny" : 5
+						},
+			"name" : "BraveNewWorld",
+			"count" : 15,
+			"doorsOpenMode" : "all"
+		}
+	},
+	"map" : {
+		"world1" : {
+			"level1" : 0,
+			"level2" : 0
+		},
+		"world2" : {
+			"level3" : 0
+		}
+	},
+	"tram" : {
+			"AttackDenyPeriod" : 2,
+			"MaxPassengers" : 15,
+			"MaxKilledPercent" : 50,
+			"MaxHarePercent" : 50,
+			"InitialSpawnCount" : 1,
+			"SpawnIncrementCount" : 2,
+			"MoveDuration" : 5,
+			"StopDuration" : 10,
+			"MinDistance" : 1,
+			"MaxStopCount" : 10,
+			"StickPeriod" : 5,
+			"SitPossibility": 25,
+			"StandPossibility": 75,
+			"StopStandCheckPeriod" : 8,
+			"SitRecheckPeriod" : 1,
+			"SitAggressionIncrement" : 2
+		},
+	"combinations" : {
+		"NoCombination" : 0,
+        "TwoEquals" : 10,
+        "ThreeEquals" : 20,
+        "TwoAndTwo" : 30,
+        "ThreeTweens" : 40,
+        "ThreeAndTwo" : 50,
+        "TwoThrees" : 60,
+        "FourEquals" : 70,
+        "FourAndTwo" : 80,
+        "FiveEquals" : 90,
+        "SixEquals" : 100
+	}
+}

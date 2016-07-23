@@ -1,0 +1,46 @@
+[
+    {
+      "name" : "single",
+      "reward" : 1
+    },
+    {
+      "name" : "two",
+      "reward" : 10
+    },
+    {
+      "name" : "three",
+      "reward" : 20
+    },
+    {
+      "name" : "twoAndTwo",
+      "reward" : 30
+    },
+    {
+      "name" : "threePairs",
+      "reward" : 40
+    },
+    {
+      "name" : "twoAndThree",
+      "reward" : 50
+    },
+    {
+      "name" : "threeAndThree",
+      "reward" : 60
+    },
+    {
+      "name" : "four",
+      "reward" : 70
+    },
+    {
+      "name" : "fourAndTwo",
+      "reward" : 80
+    },
+    {
+      "name" : "five",
+      "reward" : 90
+    },
+    {
+      "name" : "six",
+      "reward" : 100
+    }
+]
